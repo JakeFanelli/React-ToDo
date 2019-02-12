@@ -12,3 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.add-to-do,
+.manageList {
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+.item-edit > input {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.add-item-form > input {
+  width: 50%;
+}
+.add-item-form > button {
+  width: 50%;
+}
+.to-do-list > ul > li {
+  list-style: none;
+}
+.to-do-list > ul {
+  padding-left: 0px;
+}
