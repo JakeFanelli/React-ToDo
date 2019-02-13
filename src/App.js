@@ -24,7 +24,7 @@ class App extends Component {
 
   deleteItem = key => {
     const items = { ...this.state.items };
-    items[key] = null;
+    delete items[key];
     this.setState({ items });
   };
 
