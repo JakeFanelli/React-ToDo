@@ -20,6 +20,7 @@ class AddItemForm extends Component {
           type="text"
           ref={this.nameRef}
           placeholder="Enter a task..."
+          autoComplete="off"
         />
         <button type="submit">+Add Task</button>
       </form>

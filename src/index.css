@@ -31,9 +31,11 @@ code {
 .add-item-form > button {
   width: 50%;
 }
-.to-do-list > ul > li {
+.add-to-do > ul > li {
   list-style: none;
+  width: 50%;
+  margin: 0 auto;
 }
-.to-do-list > ul {
+.add-to-do > ul {
   padding-left: 0px;
 }

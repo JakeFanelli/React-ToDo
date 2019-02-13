@@ -22,6 +22,12 @@ class App extends Component {
     this.setState({ items });
   };
 
+  deleteItem = key => {
+    const items = { ...this.state.items };
+    items[key] = null;
+    this.setState({ items });
+  };
+
   addToList = key => {
     //take copy of state
     const items = { ...this.state.items };
@@ -38,6 +44,7 @@ class App extends Component {
           items={this.state.items}
           addToList={this.addToList}
           addItem={this.addItem}
+          deleteItem={this.deleteItem}
         />
         <UpdateList items={this.state.items} updateItem={this.updateItem} />
       </div>
