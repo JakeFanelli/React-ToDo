@@ -31,11 +31,28 @@ code {
 .add-item-form > button {
   width: 50%;
 }
-.add-to-do > ul > li {
+li {
   list-style: none;
   width: 50%;
   margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid;
+  border-bottom: 0px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+li:last-child {
+  border: 1px solid;
+}
+li:hover {
+  background-color: #d9534f;
+  color: white;
+  border: 1px solid #d43f3a;
 }
 .add-to-do > ul {
   padding-left: 0px;
+}
+.item-button {
+  display: inline;
+  float: right;
 }

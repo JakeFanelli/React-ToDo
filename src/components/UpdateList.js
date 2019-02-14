@@ -3,7 +3,7 @@ import UpdateItemForm from "./UpdateItemForm";
 
 const UpdateList = props => (
   <div className="manageList">
-    <h2>Update List</h2>
+    <h2>Update Tasks</h2>
     {Object.keys(props.items).map(key => (
       <UpdateItemForm
         key={key}

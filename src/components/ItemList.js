@@ -1,9 +1,8 @@
 import React from "react";
 
 const ItemList = props => (
-  <li className="task-items">
+  <li className="task-items" onClick={() => props.deleteItem(props.index)}>
     {props.item.task}
-    <button onClick={() => props.deleteItem(props.index)}>&times;</button>
   </li>
 );
 

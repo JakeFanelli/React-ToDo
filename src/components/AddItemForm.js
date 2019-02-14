@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 class AddItemForm extends Component {
+  state = {
+    value: ""
+  };
+
   nameRef = React.createRef();
 
   createItem = event => {
@@ -10,6 +14,11 @@ class AddItemForm extends Component {
     };
     this.props.addItem(item);
     event.currentTarget.reset();
+    this.setState({ value: this.nameRef.current.value });
+  };
+
+  onChange = () => {
+    this.setState({ value: this.nameRef.current.value });
   };
 
   render() {
@@ -21,8 +30,14 @@ class AddItemForm extends Component {
           ref={this.nameRef}
           placeholder="Enter a task..."
           autoComplete="off"
+          onChange={this.onChange}
         />
-        <button type="submit">+Add Task</button>
+        <button
+          disabled={this.state.value.length > 0 ? false : true}
+          type="submit"
+        >
+          +Add Task
+        </button>
       </form>
     );
   }
