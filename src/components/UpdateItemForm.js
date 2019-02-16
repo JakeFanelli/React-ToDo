@@ -17,6 +17,7 @@ class UpdateItemForm extends Component {
           name="task"
           onChange={this.handleChange}
           defaultValue={this.props.item.task}
+          autoComplete="off"
         />
       </div>
     );
